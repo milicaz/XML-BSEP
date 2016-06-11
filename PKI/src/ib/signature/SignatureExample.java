@@ -1,4 +1,6 @@
-package rs.ac.uns.ftn.informatika.ib.signature;
+package ib.signature;
+
+import ib.util.Base64;
 
 import java.security.InvalidKeyException;
 import java.security.KeyPair;
@@ -10,8 +12,6 @@ import java.security.PublicKey;
 import java.security.SecureRandom;
 import java.security.Signature;
 import java.security.SignatureException;
-
-import rs.ac.uns.ftn.informatika.ib.util.Base64;
 
 
 /**

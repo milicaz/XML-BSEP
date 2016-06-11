@@ -1,5 +1,8 @@
 package forms;
 
+import ib.security.KeyStoreReader;
+import ib.security.KeyStoreWriter;
+
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -17,9 +20,6 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
 import actions.CancelAction;
-
-import rs.ac.uns.ftn.informatika.ib.security.KeyStoreReader;
-import rs.ac.uns.ftn.informatika.ib.security.KeyStoreWriter;
 
 public class NewKeystoreForm extends JFrame {
 

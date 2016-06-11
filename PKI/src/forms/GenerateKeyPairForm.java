@@ -1,5 +1,7 @@
 package forms;
 
+import ib.security.CertificateGenerator;
+
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -22,8 +24,6 @@ import actions.OkAction;
 
 import org.bouncycastle.asn1.x500.X500NameBuilder;
 import org.bouncycastle.asn1.x500.style.BCStyle;
-
-import rs.ac.uns.ftn.informatika.ib.security.CertificateGenerator;
 
 import actions.CancelAction;
 import actions.OkAction;

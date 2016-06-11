@@ -1,9 +1,9 @@
-package rs.ac.uns.ftn.informatika.ib.security;
+package ib.security;
+
+import ib.util.Base64;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-
-import rs.ac.uns.ftn.informatika.ib.util.Base64;
 
 
 public class MessageDigestExample {
