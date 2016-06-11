@@ -1,4 +1,4 @@
-package rs.ac.uns.ftn.informatika.ib.security;
+package ib.security;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

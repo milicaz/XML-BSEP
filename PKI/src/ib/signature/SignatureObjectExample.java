@@ -1,4 +1,6 @@
-package rs.ac.uns.ftn.informatika.ib.signature;
+package ib.signature;
+
+import ib.util.Base64;
 
 import java.io.IOException;
 import java.security.InvalidKeyException;
@@ -10,8 +12,6 @@ import java.security.PublicKey;
 import java.security.Signature;
 import java.security.SignatureException;
 import java.security.SignedObject;
-
-import rs.ac.uns.ftn.informatika.ib.util.Base64;
 
 
 public class SignatureObjectExample {
