@@ -3,7 +3,6 @@ package xmldb.rest.baseX;
 /**
  * Klasa sadrzi set podrzanih HTTP metoda.
  * 
- * @author Igor Cverdelj-Fogarasi
  *
  */
 public enum RequestMethod {

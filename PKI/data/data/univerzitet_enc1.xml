@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><univerzitet naziv="UNS">
 	<fakultet id="1" naziv="FTN">
-		<odsek id="E" naziv="Elektro"><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>aH6LuaOpVpcj+RkxzmuYLoEc6y0mnC3OC6GcOGIjiL6pvE+yKbBgo2qi5Oa0JhcVGvXVK2I4xwG0
-tO253/P4rNXkIkeNBvq10rrLFvZpQy9Eg9VbCmMElbYvjaC2uC2s2QLw1FPocZaCvyySq+bZBxfo
-7TT1O/LStvnMXLdxlY0/eNTLIZXkUy22ySnhPrE7g6foRgG+rFK6khcwcQrxI7HyaUeIMS2p21/K
-83f5C2LQ5ul63lbMbnmhyFhnAED114Fn6ak2nxJfiQvsx9ffYqCkMDXoyDh6B9sTBi9JxNAx9riJ
-nq3iNt8H7JpkKxagCQo5nHz+OryJKqfv8xJa7Yn7KpG7PXgQBL7PW7Nn7eFigLULr3GJwlrIlcOW
-Pv8I1zEoErns/RxXhf2w9owtBh2emdyIAMNLrF7TKfNhInuJ1S+I2vPoRLyOhG3DJBuP4qGmAxye
-8EhQbcShOJCzKI7BaRCRl4SxoZjE5b0y5NY+OCrnuCY+UbWs2XE+oWAUFPqTfEMLMiTXrRsjYIU+
-GhG71oS6+In8QTNg1T5hyt19i5aVkdBQMhEraSkNHihmNnBuYl4mI49Byd0ZGY/PEI0MdQUxvHSq
-OABIyWxxQpVL9UJYd36hqBANeUnXK0HabtXbIhlXDt0isniThqBlUMw+IrH31fXO8stcfupSvqwG
-75SMj64VanpJoO7vVkXeTE+zoeaIhKIUjjvaLi9xCFTYRgDrrNGshK0lyyen4XJZdwN4rbtfTlDF
-hVRA09x4jpau2PvAZ/55m05YVNK0YeNe82b5KViEmcTQ5dDhwbBX/JYKd7+t0ER87o/A+XWsqTeR
-yfsz7tNfHLAmD+VuPBSjMsr5Aust/UEi8FhzTPL9lwyfwWJfVs5AIOKYUZG6tnpxZAkHFoY+psr+
-i8VoFzNIsi03IVgIVhYg42G4EOcjyIVfLB+a3Vn6uXUDPEh7YA0mW445PBX0kJs3Ut/L5f5SAvvx
-BAHuJ+e+bIcB4tv21pFzm1iNpyzGaaGg8Jetx6dnj4ht6uSFzHDWHiDpPhlpwffgyQLZapNbqNb4
-daa8889LlSBKhQFC6v53tCH2QB1b0D/Dwqh+BibQov8Wu+33oWV77wJu1Bx7vDWiBw6dW7wJ5cUk
-Vn4ml5OF2rFaYwTkTkV9NoA65BgAAxdIXg==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></odsek>
+		<odsek id="E" naziv="Elektro"><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>CwFu1DvVrCjCxNqxRiYEnsxONxe8he0/Jjfn5HUmRWltU8Eyka6wDJRxilNMVIpGUxvvtfy24fHm
+CIorlhNceGmrVvZyv1Ki7evClJ39IRlxd3v92OTWtUFco2o42nbqKn3ezJ/FB5GG9PDG13MvmBt1
+5nCZwMY0BZ7yAznQ6FzB3YHWThvXAZGqILwHt+onv9w12/cjcUPgpqrLG/iA1xcxt2XGQq/RwTs0
+PM6YPQYUTgD96PMZ8M7EZWGUiKzg5RDb1+DQumHpPuSv4v7+Z1AIdswEs0c5ElrnPIlmAKddWy/1
+nsy+rA/POQzDbbud9Vxk9sUdRGHfFbDIZkGAt2Ac1cWnnmClCB25RvUNxii4iWxta++9+iSZAyZI
+SPKAJMu4v9WfyDo0TsXq8p8vIvfF3MbjDdGv3EJfPlJJh35PWC3UFQV0/ScERmUsyGonAVqpVh1+
+tADXLjF+1fwrOKeAH5qL9iodD6vAuXISXFHrobNIRiDlTOlF4SHdPNUrZYz5DZ1xboLq3xr2AFJp
+IrIaUmVvixTzSn9a2msmUFNoSRijgAs5PSUCuU+3Wtifa42sONTcrbgjT+UYWsCz3l8LMy1Zgft9
+vPKD5AQoY7guQ0HYU7q4BbpD4uOEk8csW+Tt0cJjNJ5Ow9XHCb3LgaO2BJZ7ENMZDuKJlF1ANWmD
+3qjaxIoL4bslcdkCc2H8BISJs5iXkZ7nOR0yuv7xxE8tfJjvY1OzPhER4Y5LUp0gZ/2tNmbA7zrL
+a6eMkRurGm1JGc4fE4ac4ZDk/phHGGFnIxVDRsmhqtDm3ymerP0Vfeo0eS2O+DqILbKpGgyV8t04
+cppreqagjSkqbYhrPDqBqwy5L1vTOt6A0AwWwRR7Q8iVSp5oiQO3hmykhe//Bb2NiR1lmMSThsXD
+U64Ig1eFA0oT5iLPCOYB3geqCtWEIJoSkGkjYGll9/gaxANa1gqowg7d7I4E1SMNLmzQcwG3Ouwm
+m55LDb9jCvM26CVayIk/wxWqyjGzW/1/PtsEAOsWSVUpzC8CnIXpvMYJUlaFVaUCk53WezU6Fizg
+ekjXAcawAoNtKs8jzp3hTiKJZWwxQGOQahw0gznQmKh7gnWD+uTylBiK5R9ImwgMxtIl8zaKSjfU
+y36zoMcO6B7t9e/HeJlmjhrPVN3btyYS+w==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></odsek>
 		<odsek id="IM" naziv="Menadzment">
 			<student brojIndeksa="1122" ime="Svetlana" prezime="Tamnic">
 				<polozenIspit datum="2003-08-10" nastavnik="Jela" ocena="6">
