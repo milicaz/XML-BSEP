@@ -1,5 +1,6 @@
 package app;
 
+
 import encryption.Decrypt;
 import encryption.Encrypt;
 import gui.main.form.MainFrame;
@@ -14,7 +15,7 @@ import signature.SignEnveloped;
 import signature.VerifySignatureEnveloped;
 import vezbe.bsep.bcrypt.BCrypt;
 import vezbe.bsep.bcrypt.BCryptHashing;
-import vezbe.bsep.passwords.PasswordStorage;
+//import vezbe.bsep.passwords.PasswordStorage;
 
 public class Aplication {
 
@@ -50,35 +51,35 @@ public class Aplication {
 		System.out.println("Hesirana lozinka: " + hashed1 );
 		
 		
-		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Password:");
-		String attemptedPassword = in.readLine();
-		if (BCrypt.checkpw(attemptedPassword, hashed))
-			System.out.println("ACCESS GRANTED");
-		else
-			System.out.println("ACCESS DENIED!!!");
-		PasswordStorage pswst=new PasswordStorage();
-		 // umesto citanja passwora iz baze recimo, ovde imamo hardkodirani password
-		 // naravno, iz baze bi se citao vec hashirani 
-		String password = "toomanysecrets";
-		// i prethodno generisani salt bi bio snimljen u bazu ...
-		byte[] salt = pswst.generateSalt();
-		// cisto da bi videli kako izgleda ...
-		System.out.println("Salt is: " + pswst.base64Encode(salt));
-		byte[] hashedPassword = pswst.hashPassword(password, salt);
-		System.out.println("Hashed password is: " + pswst.base64Encode(hashedPassword));
-		// hashedPassword sluzi kao snimljena lozinka u bazi recimo ...
-		// naravno cuva se i salt koji ne mora biti nikako zasticen jer se ne smatra tajnim podatkom
-		BufferedReader in1 = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Password:");
-		String attemptedPassword1 = in1.readLine();
-		
-		if(pswst.authenticate(attemptedPassword1, hashedPassword, salt)){
-			System.out.println("ACCESS GRANTED");
-		}else{
-			System.out.println("ACCESS DENIED");
-			
-		}
+//		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+//		System.out.println("Password:");
+//		String attemptedPassword = in.readLine();
+//		if (BCrypt.checkpw(attemptedPassword, hashed))
+//			System.out.println("ACCESS GRANTED");
+//		else
+//			System.out.println("ACCESS DENIED!!!");
+//		PasswordStorage pswst=new PasswordStorage();
+//		 // umesto citanja passwora iz baze recimo, ovde imamo hardkodirani password
+//		 // naravno, iz baze bi se citao vec hashirani 
+//		String password = "toomanysecrets";
+//		// i prethodno generisani salt bi bio snimljen u bazu ...
+//		byte[] salt = pswst.generateSalt();
+//		// cisto da bi videli kako izgleda ...
+//		System.out.println("Salt is: " + pswst.base64Encode(salt));
+//		byte[] hashedPassword = pswst.hashPassword(password, salt);
+//		System.out.println("Hashed password is: " + pswst.base64Encode(hashedPassword));
+//		// hashedPassword sluzi kao snimljena lozinka u bazi recimo ...
+//		// naravno cuva se i salt koji ne mora biti nikako zasticen jer se ne smatra tajnim podatkom
+//		BufferedReader in1 = new BufferedReader(new InputStreamReader(System.in));
+//		System.out.println("Password:");
+//		String attemptedPassword1 = in1.readLine();
+//		
+//		if(pswst.authenticate(attemptedPassword1, hashedPassword, salt)){
+//			System.out.println("ACCESS GRANTED");
+//		}else{
+//			System.out.println("ACCESS DENIED");
+//			
+//		}
 		
 	}
 

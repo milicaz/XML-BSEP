@@ -1,8 +1,11 @@
 package forms;
 
+<<<<<<< HEAD
 import ib.security.KeyStoreReader;
 import ib.security.KeyStoreWriter;
 
+=======
+>>>>>>> 7167aab6e0340c86bc1070fd54f9f016856244b0
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -22,6 +25,15 @@ import javax.swing.JRadioButton;
 import actions.CancelAction;
 import actions.OkAction;
 
+<<<<<<< HEAD
+=======
+import org.bouncycastle.asn1.x500.X500NameBuilder;
+import org.bouncycastle.asn1.x500.style.BCStyle;
+
+import actions.CancelAction;
+import actions.OkAction;
+
+>>>>>>> 7167aab6e0340c86bc1070fd54f9f016856244b0
 public class GenerateKeyPairForm extends JFrame {
 
 	private static final long serialVersionUID = -572497822506860145L;
@@ -112,9 +124,15 @@ public class GenerateKeyPairForm extends JFrame {
 						System.out.println("ok");
 						try {
 							KeyStore.getInstance(textDSA);
+<<<<<<< HEAD
 							KeyStoreReader.readKeyStore();
 						    KeyStoreWriter.loadKeyStore("./data/marija.jks",
 						    null);
+=======
+							// KeyStoreReader.readKeyStore();
+							// KeyStoreWriter.loadKeyStore("./data/marija.jks",
+							// null);
+>>>>>>> 7167aab6e0340c86bc1070fd54f9f016856244b0
 
 							setVisible(false);
 							new GenerateCertificateForm().setVisible(true);
@@ -158,7 +176,24 @@ public class GenerateKeyPairForm extends JFrame {
 
 		});
 
+<<<<<<< HEAD
 	
+=======
+		/*
+		 * ItemListener itemListener = new ItemListener() { public void
+		 * itemStateChanged(ItemEvent itemEvent) { int state =
+		 * itemEvent.getStateChange(); System.out.println((state ==
+		 * ItemEvent.SELECTED) ? "Selected" : "Deselected");
+		 * System.out.println("Item: " + itemEvent.getItem()); ItemSelectable is
+		 * = itemEvent.getItemSelectable(); System.out.println(", Selected: " +
+		 * selectedString(is)); } }; size.addItemListener(itemListener);
+		 */
+
+		// JComboBox comboBox = new JComboBox(names);
+		//
+		// Create an ActionListener for the JComboBox component.
+		//
+>>>>>>> 7167aab6e0340c86bc1070fd54f9f016856244b0
 		size.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
 				//
@@ -191,5 +226,13 @@ public class GenerateKeyPairForm extends JFrame {
 
 	}
 
+<<<<<<< HEAD
 	
+=======
+	/*
+	 * static private String selectedString(ItemSelectable is) { Object
+	 * selected[] = is.getSelectedObjects(); return ((selected.length == 0) ?
+	 * "null" : (String) selected[0]); }
+	 */
+>>>>>>> 7167aab6e0340c86bc1070fd54f9f016856244b0
 }
