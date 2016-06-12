@@ -100,12 +100,29 @@
     </xs:complexType>
     <xs:complexType name="TPododeljak">
         <xs:sequence>
-            <xs:element name="Clan" type="od:TClan"/>
+            <xs:element name="Clan">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="od:TClan">
+                            <xs:attribute name="Naziv"/>
+                            <xs:attribute name="Oznaka"/>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="TClan">
         <xs:sequence>
-            <xs:element name="Stav" type="od:TStav"/>
+            <xs:element name="Stav">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="od:TStav">
+                            <xs:attribute name="Oznaka"/>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="TStav">
@@ -136,7 +153,15 @@
     </xs:complexType>
     <xs:complexType name="TPodtacka">
         <xs:sequence>
-            <xs:element name="Alineja" type="xs:string"/>
+            <xs:element name="Alineja">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="Oznaka"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
         </xs:sequence>
     </xs:complexType>
 </xs:schema>
