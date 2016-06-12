@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="http://www.parlament.gov.rs/odluka"
+    xmlns:od="http://www.parlament.gov.rs/odluka"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+
+    <xs:element name="Akt">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="od:Glavni_deo"/>
+                <xs:element ref="od:Unutrasnja_podela"/>
+            </xs:sequence>
+            <xs:attribute name="Naziv"/>
+            <xs:attribute name="Mesto"/>
+            <xs:attribute name="Vrsta"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Glavni_deo">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element name="Usvojeni_akt">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Usvojen_od" type="xs:string"/>
+                            <xs:element name="Usvojen_na_osnovu" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="Datum_pocetka_primene"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Akt_u_proceduri">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Predlagac" type="xs:string"/>
+                            <xs:element name="Odbor_za_ramatranje" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="Datum_ulaska_u_proceduru"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Unutrasnja_podela">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="1" name="Deo">
+                    <xs:complexType>
+                        <xs:complexContent>
+                            <xs:extension base="od:TDeo">
+                                <xs:attribute name="Naziv"/>
+                                <xs:attribute name="Oznaka"/>
+                            </xs:extension>
+                        </xs:complexContent>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="TDeo">
+        <xs:sequence>
+            <xs:element name="Glava">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="od:TGlava">
+                            <xs:attribute name="Naziv" type="xs:string"/>
+                            <xs:attribute name="Oznaka" type="xs:string"/>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TGlava">
+        <xs:sequence>
+            <xs:element name="Odeljak">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="od:TOdeljak">
+                            <xs:attribute name="Naziv"/>
+                            <xs:attribute name="Oznaka"/>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TOdeljak">
+        <xs:sequence>
+            <xs:element name="Pododeljak">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="od:TPododeljak">
+                            <xs:attribute name="Naziv"/>
+                            <xs:attribute name="Oznaka"/>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Clan" type="od:TClan"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TPododeljak">
+        <xs:sequence>
+            <xs:element name="Clan" type="od:TClan"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TClan">
+        <xs:sequence>
+            <xs:element name="Stav" type="od:TStav"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TStav">
+        <xs:sequence>
+            <xs:element name="Tacka">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="od:TTacka">
+                            <xs:attribute name="Oznaka"/>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TTacka">
+        <xs:sequence>
+            <xs:element name="Podtacka">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="od:TPodtacka">
+                            <xs:attribute name="Oznaka"/>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TPodtacka">
+        <xs:sequence>
+            <xs:element name="Alineja" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
