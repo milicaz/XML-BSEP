@@ -13,6 +13,8 @@ import java.security.UnrecoverableKeyException;
 import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
 
+import databaseReadWrite.DatabaseRead;
+
 /**
  * 
  * Cita is keystore fajla
@@ -23,7 +25,7 @@ public class KeyStoreReader {
 	
 	private static char[] password = "test10".toCharArray();
 	private static char[] keyPass  = "marija1".toCharArray();
-	
+	private static DatabaseRead dbread= new DatabaseRead();
 	
 	public void testIt() {
 		readKeyStore();
@@ -46,6 +48,7 @@ public class KeyStoreReader {
 				PrivateKey privKey = (PrivateKey)ks.getKey("marija", keyPass);
 				System.out.println("Privatni kljuc:");
 				System.out.println(privKey);
+				dbread.readDatabase();
 			}
 			else
 				System.out.println("Nema para kljuceva za Mariju");

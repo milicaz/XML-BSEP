@@ -26,6 +26,7 @@ public class NewKeystoreForm extends JFrame {
 	public static NewKeystoreForm instance;
 	public KeyStoreReader keystorereader = new KeyStoreReader();
 	public KeyStoreWriter keystorewriter = new KeyStoreWriter();
+	private char[] password;
 
 	public NewKeystoreForm() {
 
@@ -98,11 +99,7 @@ public class NewKeystoreForm extends JFrame {
 		label.setText("Select the type of the new keystore: ");
 		// label.setAlignmentX(LEFT_ALIGNMENT);
 
-
-
-		
-		final JButton btnOk= new JButton("OK");
-
+		final JButton btnOk = new JButton("OK");
 
 		final JButton btn2 = new JButton(new CancelAction(this));
 
@@ -138,34 +135,34 @@ public class NewKeystoreForm extends JFrame {
 
 		spanel.add(btnOk);
 		spanel.add(btn2);
+		
+		KeyStoreWriter keyStoreWriter = new KeyStoreWriter();
+		
+		
 
 		button1.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
 				// Execute when button is pressed
 
-
 				btnOk.addActionListener(new ActionListener() {
 
-		
-
-
-
 					public void actionPerformed(ActionEvent e) {
-						//System.out.println("ok");
+						// System.out.println("ok");
 						try {
 							KeyStore.getInstance(text1);
 							System.out.println(KeyStore.getInstance(text1));
 							KeyStoreReader.readKeyStore();
-							KeyStoreWriter.loadKeyStore("./data/marija.jks", null);
+							KeyStoreWriter.loadKeyStore("./data/marija.jks",
+									password);
+							keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
 							setVisible(false);
-							
 
 						} catch (KeyStoreException e1) {
 							// TODO Auto-generated catch block
 							e1.printStackTrace();
 						}
-						
+
 					}
 				});
 
@@ -173,7 +170,7 @@ public class NewKeystoreForm extends JFrame {
 
 		});
 
-	button2.addActionListener(new ActionListener() {
+		button2.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
 				// Execute when button is pressed
@@ -184,17 +181,14 @@ public class NewKeystoreForm extends JFrame {
 						try {
 							KeyStore.getInstance(text2);
 							KeyStoreReader.readKeyStore();
-							KeyStoreWriter.loadKeyStore("./data/marija.jks", null);
-
-
-
-
-							
+							KeyStoreWriter.loadKeyStore("./data/marija.jks",
+									password);
+							keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
+							setVisible(false);
 						} catch (KeyStoreException e1) {
 							// TODO Auto-generated catch block
 							e1.printStackTrace();
 						}
-
 
 						KeyStoreReader.readKeyStore();
 					}
@@ -214,8 +208,10 @@ public class NewKeystoreForm extends JFrame {
 						try {
 							KeyStore.getInstance(text3);
 							KeyStoreReader.readKeyStore();
-							KeyStoreWriter.loadKeyStore("./data/marija.jks", null);
-							
+							KeyStoreWriter.loadKeyStore("./data/marija.jks",
+									password);
+							keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
+							setVisible(false);
 						} catch (KeyStoreException e1) {
 							// TODO Auto-generated catch block
 							e1.printStackTrace();
@@ -233,14 +229,17 @@ public class NewKeystoreForm extends JFrame {
 
 			public void actionPerformed(ActionEvent e) {
 				// Execute when button is pressed
-     			System.out.println("You clicked the button");
+				System.out.println("You clicked the button");
 				btnOk.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.out.println("ok");
 						try {
 							KeyStore.getInstance(text4);
 							KeyStoreReader.readKeyStore();
-							KeyStoreWriter.loadKeyStore("./data/marija.jks", null);
+							KeyStoreWriter.loadKeyStore("./data/marija.jks",
+									password);
+							keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
+							setVisible(false);
 						} catch (KeyStoreException e1) {
 							// TODO Auto-generated catch block
 							e1.printStackTrace();
@@ -248,7 +247,6 @@ public class NewKeystoreForm extends JFrame {
 
 					}
 				});
-
 
 			}
 
@@ -258,14 +256,19 @@ public class NewKeystoreForm extends JFrame {
 
 			public void actionPerformed(ActionEvent e) {
 				// Execute when button is pressed
-     			System.out.println("You clicked the button");
+				System.out.println("You clicked the button");
 				btnOk.addActionListener(new ActionListener() {
+
 					public void actionPerformed(ActionEvent e) {
 						System.out.println("ok");
 						try {
 							KeyStore.getInstance(text4);
 							KeyStoreReader.readKeyStore();
-							KeyStoreWriter.loadKeyStore("./data/marija.jks", null);
+
+							KeyStoreWriter.loadKeyStore("./data/marija.jks",
+									password);
+							keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
+							setVisible(false);
 						} catch (KeyStoreException e1) {
 							// TODO Auto-generated catch block
 							e1.printStackTrace();
@@ -273,25 +276,26 @@ public class NewKeystoreForm extends JFrame {
 
 					}
 				});
-
 
 			}
 
 		});
 
-
 		button6.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
 				// Execute when button is pressed
-     			System.out.println("You clicked the button");
+				System.out.println("You clicked the button");
 				btnOk.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.out.println("ok");
 						try {
 							KeyStore.getInstance(text4);
 							KeyStoreReader.readKeyStore();
-							KeyStoreWriter.loadKeyStore("./data/marija.jks", null);
+							KeyStoreWriter.loadKeyStore("./data/marija.jks",
+									password);
+							keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
+							setVisible(false);
 						} catch (KeyStoreException e1) {
 							// TODO Auto-generated catch block
 							e1.printStackTrace();
@@ -299,7 +303,6 @@ public class NewKeystoreForm extends JFrame {
 
 					}
 				});
-
 
 			}
 
@@ -309,42 +312,27 @@ public class NewKeystoreForm extends JFrame {
 
 			public void actionPerformed(ActionEvent e) {
 				// Execute when button is pressed
-     			System.out.println("You clicked the button");
+				System.out.println("You clicked the button");
 				btnOk.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						System.out.println("ok");
 						try {
 							KeyStore.getInstance(text4);
 							KeyStoreReader.readKeyStore();
-							KeyStoreWriter.loadKeyStore("./data/marija.jks", null);
-							
-							/*String url = "jdbc:mysql://localhost:8080/BESP";
-					        String user = "sa";
-					        String password = "root";
-					 
-					       // String filePath = "D:/Photos/Tom.png";
-					        try {
-					            Connection conn = DriverManager.getConnection(url, user, password);
-					 
-					           String querySetLimit = "SET GLOBAL max_allowed_packet=104857600;";  // 10 MB
-					            Statement stSetLimit = conn.createStatement();
-					            stSetLimit.execute(querySetLimit);
-					 
-					            String sql = "LOAD DATA INFILE './data/marija.jks' INTO TABLE dbo.GenerateKeyPair;";
-					            PreparedStatement statement = conn.prepareStatement(sql);
-					        
-							
-							 */
-
+							KeyStoreWriter.loadKeyStore("./data/marija.jks",
+									password);
+							keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
+							setVisible(false);
 						} catch (KeyStoreException e1) {
 							// TODO Auto-generated catch block
 							e1.printStackTrace();
 						}
-						}	});
 					}
 				});
 			}
-		
+		});
+	}
+
 	public static NewKeystoreForm getInstance() {
 		if (instance == null)
 			instance = new NewKeystoreForm();
@@ -352,4 +340,4 @@ public class NewKeystoreForm extends JFrame {
 
 	}
 
-					}			
+}
