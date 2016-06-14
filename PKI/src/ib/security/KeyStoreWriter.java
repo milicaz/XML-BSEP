@@ -115,6 +115,7 @@ public class KeyStoreWriter {
 	public void testing(String alias, Date lastModified, String password)
 			throws KeyStoreException {
 		//keyStore.getType();
+		System.out.println("Alias je: " + alias);
 		if (keyStore.containsAlias(alias)) {
 			
 			Connection conn = null;
