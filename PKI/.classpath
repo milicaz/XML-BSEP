@@ -11,8 +11,14 @@
 	<classpathentry exported="true" kind="lib" path="lib/bcpkix-jdk15on-148.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/commons-io-1.3.2.jar"/>
+<<<<<<< HEAD
 	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jaxb-api-2.2.5.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jaxb-impl-2.2.5.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jaxb-xjc-2.2.5.1.jar"/>
+=======
+	<classpathentry kind="lib" path="C:/Program Files/Java/jaxb-api-2.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jaxb-impl-2.2.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jaxb-xjc-2.2.5.1.jar"/>
+>>>>>>> 8fae26db9cd269517db1be9278b9d9a76e39bf5f
 	<classpathentry kind="output" path="bin"/>
 </classpath>
