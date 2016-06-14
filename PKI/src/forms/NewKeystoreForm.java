@@ -155,7 +155,7 @@ public class NewKeystoreForm extends JFrame {
 							KeyStoreReader.readKeyStore();
 							KeyStoreWriter.loadKeyStore("./data/marija.jks",
 									password);
-							keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
+							//keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
 							setVisible(false);
 
 						} catch (KeyStoreException e1) {
@@ -183,7 +183,7 @@ public class NewKeystoreForm extends JFrame {
 							KeyStoreReader.readKeyStore();
 							KeyStoreWriter.loadKeyStore("./data/marija.jks",
 									password);
-							keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
+							//keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
 							setVisible(false);
 						} catch (KeyStoreException e1) {
 							// TODO Auto-generated catch block
@@ -210,7 +210,7 @@ public class NewKeystoreForm extends JFrame {
 							KeyStoreReader.readKeyStore();
 							KeyStoreWriter.loadKeyStore("./data/marija.jks",
 									password);
-							keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
+							//keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
 							setVisible(false);
 						} catch (KeyStoreException e1) {
 							// TODO Auto-generated catch block
@@ -238,7 +238,7 @@ public class NewKeystoreForm extends JFrame {
 							KeyStoreReader.readKeyStore();
 							KeyStoreWriter.loadKeyStore("./data/marija.jks",
 									password);
-							keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
+							//keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
 							setVisible(false);
 						} catch (KeyStoreException e1) {
 							// TODO Auto-generated catch block
@@ -267,7 +267,7 @@ public class NewKeystoreForm extends JFrame {
 
 							KeyStoreWriter.loadKeyStore("./data/marija.jks",
 									password);
-							keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
+							//keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
 							setVisible(false);
 						} catch (KeyStoreException e1) {
 							// TODO Auto-generated catch block
@@ -294,7 +294,7 @@ public class NewKeystoreForm extends JFrame {
 							KeyStoreReader.readKeyStore();
 							KeyStoreWriter.loadKeyStore("./data/marija.jks",
 									password);
-							keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
+							//keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
 							setVisible(false);
 						} catch (KeyStoreException e1) {
 							// TODO Auto-generated catch block
@@ -321,7 +321,7 @@ public class NewKeystoreForm extends JFrame {
 							KeyStoreReader.readKeyStore();
 							KeyStoreWriter.loadKeyStore("./data/marija.jks",
 									password);
-							keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
+							//keystorewriter.testing(KeyStoreWriter.alias, KeyStoreWriter.lastModified,password.toString());
 							setVisible(false);
 						} catch (KeyStoreException e1) {
 							// TODO Auto-generated catch block
