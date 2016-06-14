@@ -1,5 +1,11 @@
-/encryption/
+/actions/
 /app/
-/gui/
+/encryption/
 /forms/
+/gui/
+/ib/
+/security/
+/signature/
+/util/
+/vezbe/
 /xmldb/

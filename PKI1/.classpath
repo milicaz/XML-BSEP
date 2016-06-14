@@ -12,5 +12,8 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Program Files/Java"/>
 	<classpathentry kind="lib" path="C:/Program Files/Java/commons-io-1.3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jaxb-api-2.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jaxb-impl-2.2.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jaxb-xjc-2.2.5.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
